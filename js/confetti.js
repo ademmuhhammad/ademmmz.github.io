@@ -29,7 +29,7 @@ var shape = function shape(element) {
     e.style['background-color'] = 'transparent';
 
     e.style['border-bottom'] = size + 'px solid ' + color;
-    e.style['border-left'] = size / 8 + 'px solid transparent';
+    e.style['border-left'] = size / 6 + 'px solid transparent';
     e.style['border-right'] = size / 8 + 'px solid transparent';
     e.style.height = 100;
     e.style.width = size;
@@ -92,7 +92,7 @@ function updateFetti(fetti, progress, decay) {
 }
 
 function animate(root, fettis, decay) {
-  var totalTicks = 2000;
+  var totalTicks = 150;
   var tick = 0;
 
   function update() {
